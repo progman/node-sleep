@@ -8,7 +8,7 @@
 #include <node.h>
 #include <node_buffer.h>
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-bool is_uint(const char* str)
+bool is_uint(const char *str)
 {
 	size_t i = 0;
 
@@ -39,12 +39,12 @@ bool is_uint(const char* str)
 	return true;
 }
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-bool is_uint(const std::string& str)
+bool is_uint(const std::string &str)
 {
 	return is_uint(str.c_str());
 }
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-bool str2uint(const char* str, unsigned int& value, unsigned int default_value)
+bool str2uint(const char *str, unsigned int &value, unsigned int default_value)
 {
 	value = default_value;
 
@@ -58,7 +58,7 @@ bool str2uint(const char* str, unsigned int& value, unsigned int default_value)
 	return true;
 }
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-bool str2uint(const std::string& str, unsigned int& value, unsigned int default_value)
+bool str2uint(const std::string &str, unsigned int &value, unsigned int default_value)
 {
 	return str2uint(str.c_str(), value, default_value);
 }
