@@ -12,7 +12,7 @@ bool is_uint(const char *str)
 {
 	size_t i = 0;
 
-	for(;; i++, str++)
+	for (;; i++, str++)
 	{
 		char ch = *str;
 
